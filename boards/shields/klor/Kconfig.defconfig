@@ -6,8 +6,8 @@ if SHIELD_KLOR_DONGLE
     config ZMK_KEYBOARD_NAME
         default "KLOR"
 
-    #config ZMK_SPLIT_ROLE_CENTRAL
-    #    default y
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
 
     #config ZMK_SPLIT_BLE
     #    default y
@@ -21,8 +21,8 @@ if SHIELD_KLOR_DONGLE
     config BT_MAX_PAIRED
         default 8
 
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
-        default y
+    #config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    #    default y
 
     config ZMK_USB
         default y
