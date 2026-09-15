@@ -96,10 +96,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &ext_power EP_TOG  &trans     &kp UP    &trans     &kp LBRC                  &kp RBRC    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-&trans  &rgb_ug RGB_EFF    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT                  &kp RBKT    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &trans
-&trans  &trans             &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR  &trans  &trans  &kp RPAR    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                                      &trans    &trans     &trans    &trans  &trans  &kp DELETE  &kp KP_N0  &trans
+                   &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                    &kp NUMBER_6     &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0
+&ext_power EP_TOG  &rgb_ug RGB_EFF  &kp PG_UP     &kp CAPSLOCK  &kp PAGE_DOWN  &kp LBKT                        &kp RBKT         &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp KP_MINUS     &kp DELETE
+&trans             &trans           &trans        &trans        &trans         &kp LPAR        &trans  &trans  &kp RPAR         &trans          &kp DOWN_ARROW  &trans           &kp KP_MULTIPLY  &trans
+                                                  &trans        &trans         &kp LEFT_BRACE  &trans  &trans  &kp RIGHT_BRACE  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
