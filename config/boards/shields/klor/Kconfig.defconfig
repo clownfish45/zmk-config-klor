@@ -51,8 +51,8 @@ endif # LEFT RIGHT
 if SHIELD_KLOR_DONGLE
 
 # Max 16 characters in keyboard name
-config ZMK_KLOR
-    default "klor"
+config ZMK_KEYBOARD_NAME
+    default "KLOR"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
