@@ -28,5 +28,5 @@ include:
     
   - board: nice_nano_v2
     shield: settings_reset
-  - board: xiao_ble
+  - board: xiao_ble_sense
     shield: settings_reset
