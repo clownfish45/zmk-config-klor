@@ -21,10 +21,10 @@ if SHIELD_KLOR_DONGLE
 
     # 2 split peripherals + 5 host profiles
     config BT_MAX_CONN
-        default 7
+        default 8
 
     config BT_MAX_PAIRED
-        default 7
+        default 8
 
     config ZMK_USB
         default y
