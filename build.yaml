@@ -28,5 +28,7 @@ include:
     
   - board: nice_nano_v2
     shield: settings_reset
+    
   - board: xiao_ble_sense
     shield: settings_reset
+    cmake-args: -DCONFIG_MPU_ALLOW_FLASH_WRITE=y -DCONFIG_FLASH=y -DCONFIG_FLASH_PAGE_LAYOUT=y -DCONFIG_FLASH_MAP=y -DCONFIG_NVS=y -DCONFIG_SETTINGS_NVS=y
