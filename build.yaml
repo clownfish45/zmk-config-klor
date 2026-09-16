@@ -13,22 +13,22 @@
 #
 
 include:
-  - board: xiao_ble_sense
+  - board: xiao_ble//zmk
     shield: klor_dongle
  #   cmake-args: -DCONFIG_ZMK_LOG_LEVEL=4 #-DCONFIG_ZMK_STUDIO=y
     snippet: zmk-usb-logging #studio-rpc-usb-uart
     
-  - board: nice_nano_v2
+  - board: nice_nano_v2//zmk
     shield: klor_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     
-  - board: nice_nano_v2
+  - board: nice_nano_v2//zmk
     shield: klor_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     
-  - board: nice_nano_v2
+  - board: nice_nano_v2//zmk
     shield: settings_reset
     
-  - board: xiao_ble_sense
+  - board: xiao_ble//zmk
     shield: settings_reset
-    cmake-args: -DCONFIG_MPU_ALLOW_FLASH_WRITE=y -DCONFIG_FLASH=y -DCONFIG_FLASH_PAGE_LAYOUT=y -DCONFIG_FLASH_MAP=y -DCONFIG_NVS=y -DCONFIG_SETTINGS_NVS=y
+    #cmake-args: -DCONFIG_MPU_ALLOW_FLASH_WRITE=y -DCONFIG_FLASH=y -DCONFIG_FLASH_PAGE_LAYOUT=y -DCONFIG_FLASH_MAP=y -DCONFIG_NVS=y -DCONFIG_SETTINGS_NVS=y
