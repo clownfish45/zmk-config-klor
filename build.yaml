@@ -13,7 +13,7 @@
 #
 
 include:
-  - board: xiao_ble_sense
+  - board: xiao_ble
     shield: klor_dongle
     #cmake-args: -DCONFIG_ZMK_STUDIO=y
     #snippet: studio-rpc-usb-uart
@@ -28,5 +28,5 @@ include:
     
   - board: nice_nano_v2
     shield: settings_reset
-  - board: xiao_ble_sense
+  - board: xiao_ble
     shield: settings_reset
