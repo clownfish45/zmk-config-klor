@@ -15,7 +15,7 @@
 include:
   - board: xiao_ble_sense
     shield: klor_dongle
-    cmake-args: -DCONFIG_ZMK_LOG_LEVEL=4 #-DCONFIG_ZMK_STUDIO=y
+ #   cmake-args: -DCONFIG_ZMK_LOG_LEVEL=4 #-DCONFIG_ZMK_STUDIO=y
     snippet: zmk-usb-logging #studio-rpc-usb-uart
     
   - board: nice_nano_v2
