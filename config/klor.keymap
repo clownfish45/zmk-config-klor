@@ -49,6 +49,20 @@
             key-positions = <11 20>;
             layers = <3>;
         };
+
+        logout {
+            bindings = <&signout>;
+            key-positions = <8 9>;
+        };
+    };
+
+    macros {
+        signout: signout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
+            label = "SIGNOUT";
+        };
     };
 
     keymap {
@@ -101,10 +115,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
-&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &kp BACKSLASH  &kp EQUAL     &kp MINUS
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10        &kp F11       &kp F12
-        &trans        &trans        &trans                                                                &trans        &trans         &trans
+           &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp BACKSLASH  &kp EQUAL     &kp MINUS
+&kp F1     &kp F2           &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8         &kp F9        &kp F10        &kp F11       &kp F12
+           &trans           &trans        &trans                                                                 &trans        &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -129,10 +143,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &mo ADJUST  &trans  &trans                                  &trans  &trans  &trans
+        &trans      &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans
+        &mo ADJUST  &trans  &trans                                                  &trans        &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
