@@ -143,10 +143,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp DELETE
-&trans  &trans      &trans  &trans  &kp LEFT_BRACE        &trans  &trans  &kp RIGHT_BRACE        &trans             &trans           &trans      &trans
-&trans  &trans      &trans  &trans  &kp LEFT_BRACKET      &trans  &trans  &kp RIGHT_PARENTHESIS  &trans             &trans           &trans      &trans
-        &mo ADJUST  &trans  &trans                                                               &trans             &trans           &trans
+        &trans      &trans  &trans        &kp LEFT_PARENTHESIS  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp DELETE
+&trans  &trans      &trans  &trans        &kp LEFT_BRACE        &trans  &trans  &kp RIGHT_BRACE        &kp HOME           &kp PAGE_UP      &trans      &trans
+&trans  &trans      &trans  &kp CAPSLOCK  &kp LEFT_BRACKET      &trans  &trans  &kp RIGHT_PARENTHESIS  &kp END            &kp PAGE_DOWN    &trans      &trans
+        &mo ADJUST  &trans  &trans                                                                     &trans             &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
