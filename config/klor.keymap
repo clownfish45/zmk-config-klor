@@ -144,8 +144,8 @@
 
             bindings = <
         &trans      &trans  &trans        &kp LEFT_PARENTHESIS  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp DELETE
-&trans  &trans      &trans  &trans        &kp LEFT_BRACE        &trans  &trans  &kp RIGHT_BRACE        &kp HOME           &kp PAGE_UP      &kp SINGLE_QUOTE  &trans
-&trans  &trans      &trans  &kp CAPSLOCK  &kp LEFT_BRACKET      &trans  &trans  &kp RIGHT_PARENTHESIS  &kp END            &kp PAGE_DOWN    &trans            &trans
+&trans  &trans      &trans  &trans        &kp LEFT_BRACE        &trans  &trans  &kp RIGHT_BRACE        &kp HOME           &kp PAGE_UP      &kp DOUBLE_QUOTES  &trans
+&trans  &trans      &trans  &kp CAPSLOCK  &kp LEFT_BRACKET      &trans  &trans  &kp RIGHT_PARENTHESIS  &kp END            &kp PAGE_DOWN    &kp APOS           &trans
         &mo ADJUST  &trans  &trans                                                                     &trans             &trans           &trans
             >;
 
