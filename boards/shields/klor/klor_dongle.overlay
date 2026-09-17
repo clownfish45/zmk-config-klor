@@ -11,7 +11,9 @@
         rows = <0>;
         events = <0>;
     };
-    &board_cdc_acm_uart {
-        status = "disabled";
-    };
+};
+
+
+&board_cdc_acm_uart {
+    status = "disabled";
 };
