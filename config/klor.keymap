@@ -63,6 +63,13 @@
             bindings = <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
             label = "SIGNOUT";
         };
+
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "PARENTHESIS";
+        };
     };
 
     keymap {
@@ -116,8 +123,8 @@
 
             bindings = <
            &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp PIPE      &kp EQUAL     &kp BSPC
-&kp LSHFT  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7         &kp F8        &kp F9        &kp F10       &kp RSHFT
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp PIPE      &kp EQUAL     &kp PLUS
+&kp F1     &kp F2           &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8         &kp F9        &kp F10       &kp F11       &kp F12
            &trans           &trans        &trans                                                                 &trans        &trans        &trans
             >;
 
@@ -143,10 +150,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &trans      &trans   &trans         &kp LEFT_PARENTHESIS  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PLUS
-&trans  &trans      &trans   &kp BACKSLASH  &kp LEFT_BRACE        &trans  &trans  &kp RIGHT_BRACE        &kp HOME           &kp PAGE_UP      &kp DOUBLE_QUOTES  &kp DELETE
-&trans  &kp F11     &kp F12  &kp CAPSLOCK   &kp LEFT_BRACKET      &trans  &trans  &kp RIGHT_BRACKET      &kp END            &kp PAGE_DOWN    &kp APOS           &trans
-        &mo ADJUST  &trans   &trans                                                                      &trans             &trans           &trans
+        &kp HOME    &kp PG_UP      &trans         &kp LEFT_PARENTHESIS  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SINGLE_QUOTE
+&trans  &kp END     &kp PAGE_DOWN  &kp BACKSLASH  &kp LEFT_BRACE        &trans  &trans  &kp RIGHT_BRACE        &kp UNDER          &kp DOUBLE_QUOTES  &kp MINUS         &kp DELETE
+&trans  &kp F11     &kp F12        &kp CAPSLOCK   &kp LEFT_BRACKET      &trans  &trans  &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE   &kp APOS          &trans
+        &mo ADJUST  &trans         &trans                                                                      &trans             &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
