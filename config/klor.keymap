@@ -51,7 +51,7 @@
         };
 
         logout {
-            bindings = <&signout>;
+            bindings = <&kp C_POWER>;
             key-positions = <8 9>;
         };
     };
