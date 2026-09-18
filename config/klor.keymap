@@ -60,7 +60,7 @@
         signout: signout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
+            bindings = <&kp LCTRL>, , <&macro_wait_time 50>, <&kp LEFT_ALT>, <&macro_wait_time 500>, <&kp DELETE>;
             label = "SIGNOUT";
         };
 
