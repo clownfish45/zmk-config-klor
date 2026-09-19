@@ -1,4 +1,4 @@
-due in for cleanup after transitioning from v03
+due in for cleanup after transitioning from v03 (done i think)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/docs/images/klor-font-logo-dark.svg">
