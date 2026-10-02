@@ -1,5 +1,7 @@
 due in for cleanup after transitioning from v03 (done i think)
 
+please implement deep sleep with wake sources (read https://zmk.dev/docs/features/low-power-states)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/docs/images/klor-font-logo-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="/docs/images/klor-font-logo-bright.svg">
